@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 public class LojaApplication {
 	
 	@Bean
-	@LoadBalanced //vai da a inteligencia para identificar a url de fornecedor
+	@LoadBalanced //vai da a inteligencia para identificar a url de fornecedor no compraService
 	public RestTemplate getRestTemplate() {
 		return new RestTemplate();
 	}

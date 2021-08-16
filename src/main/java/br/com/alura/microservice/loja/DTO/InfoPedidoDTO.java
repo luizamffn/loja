@@ -4,6 +4,7 @@ public class InfoPedidoDTO {
 	
 	private Long id;
 	private Integer tempoDePreparo;
+	
 	public Long getId() {
 		return id;
 	}

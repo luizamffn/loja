@@ -11,7 +11,8 @@ import br.com.alura.microservice.loja.DTO.InfoFornecedorDTO;
 import br.com.alura.microservice.loja.DTO.InfoPedidoDTO;
 import br.com.alura.microservice.loja.DTO.ItemDaCompraDTO;
 
-@FeignClient("fornecedor")
+@FeignClient("fornecedor") //id do microservico que a aplicação irá acessar  
+							//Adicionar o @EnableFeignClients no LojaApplication
 public interface FornecedorClient {
 
 	@RequestMapping("/info/{estado}")
